@@ -1,0 +1,118 @@
+$white-color: #fff;
+$black-color: #000;
+$theme-color: #D9CBB4;
+$blue-color: #240a97;
+$green-color: #a4b359;
+$light-gray-color: #949494;
+$gray-color: #4b4a4a;
+$dark-gray-color: #353535;
+$custom-color: #BF423E; 
+$primary-color: #D0742D;
+$secondary-color: #14152E;
+
+
+
+
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.theme-btn {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: .75rem 3rem;
+    font-family: 'NimbuSanTBlaCon', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    width: fit-content;
+    background-color: $custom-color;
+    color: $theme-color;
+    border: none;
+    margin-top: 2rem;
+    &:hover::after {
+        top: 0;
+        left: 0;
+    }
+}
+.theme-btn:hover img {
+    animation: motion .4s alternate infinite ease-in;
+    animation-iteration-count: 4;
+    animation-delay: .25s;
+}
+.theme-btn::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: $secondary-color;
+    position: absolute;
+    transition: .2s ease-in;
+    z-index: -2;
+    top: 7%;
+    left: 2.5%;
+}
+img {
+    display: inline-block;
+    margin-left: .25rem;
+}
+@keyframes motion {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(15px);
+    }
+}
+
+
+
+
+
+.banner-section {
+    background: url(../images/menu-bg.svg) fixed center;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .char-left, .char-right{
+        img {
+            margin: 0 2.5rem;
+        }
+    }
+    .page-heading {
+        text-align: center;
+        h2 {
+            color: $primary-color;
+            font-family: 'NimbuSanTBlaCon', sans-serif;
+            font-size: 74px;
+        }
+    }
+}
+
+
+
+.menu-banner {
+    padding: .5rem 0 4.9rem 0;
+    margin: 4.9rem 0 13rem 0;
+    position: relative;
+    background: $primary-color;
+    .banner-heading{
+        h1{
+            text-transform: uppercase;
+            font-family: 'NimbuSanTBlaCon', sans-serif;
+            font-size: 200px;    
+            color: $secondary-color;           
+        }
+    }
+    .banner-img{
+        position: absolute;
+        top: 50%;
+        left: 85%;
+        transform: translate(-85%, -50%);
+    }
+}

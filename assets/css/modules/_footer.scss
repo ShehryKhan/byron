@@ -1,0 +1,256 @@
+
+footer {
+    .footer-head {
+        background: url(../images/byron-club-bg.svg);
+        text-align: center;
+        padding: 7rem 0;
+        h1 {
+            color: $theme-color;
+            text-transform: uppercase;
+            font-size: 117px;
+            font-family: 'NimbuSanTBlaCon', sans-serif;
+        }
+        h2 {
+            color: $secondary-color;
+            font-family: 'Lumios Marker', sans-serif;
+            font-size: 117px;
+        }
+        .theme-btn {
+            background-color: $theme-color;
+            color: $black-color;
+            position: relative;
+            z-index: 6;
+            &::after {
+
+            }
+        }
+        
+    }
+    .footer-inner {
+        background: url(../images/footer-bg.svg) fixed center;
+        padding: 3.5rem 0 0 0;
+        .footer-character {
+            text-align: center;
+            margin-bottom: 4.5rem;
+        }
+        .footer-tabs {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: 0 auto;
+            li {
+                list-style: none;
+                a {
+                   color: $theme-color;
+                   text-decoration: none;
+                   text-transform: uppercase;
+                   font-family: 'NimbuSanTBlaCon', sans-serif;
+                   font-weight: 700;
+                   letter-spacing: .1rem;
+                   transition: .2s ease-in;
+                   font-size: 32px;
+                   &:hover {
+                       transition-delay: .2s;
+                       color: $primary-color;
+                   }
+               }
+            }
+        }
+        h2 {
+            color: $theme-color;
+            text-transform: capitalize;
+            font-family: 'NimbuSanTBlaCon', sans-serif;
+            text-align: center;
+            // font-weight: 900;
+            font-size: 93px;
+            margin: 2rem 0 0 0;
+        }
+        .social-images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+        .social-images {
+            a{
+                display: inline-block;
+                text-decoration: none;
+                margin: .5rem .5rem 1.5rem .5rem;
+                color: $secondary-color;
+                background-color: $theme-color;
+                padding: .3rem .8rem;
+                font-size: 2.5rem;
+                border-radius: 50%;
+                transition: .2s ease-in;
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+        .footer-bottom {
+            background-color: $theme-color;
+            text-align: center;
+            user-select: none;
+            padding: 2.5rem 0;
+            h3{
+                font-weight: 700;
+                font-size: 32px;
+                font-family: 'Avenir', sans-serif;
+                margin: 0;
+    
+            }
+        }
+    }
+    
+    
+    .footer-mobile {
+        background: url(../images/footer-bg.svg);
+        padding: 2rem 0 0 0;
+        .mobile-footer-nav {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+        ul {
+            padding: 0;
+        }
+        ul li{
+            padding: .35rem 0;
+            list-style: none;
+            a{
+              text-align: center;
+              text-decoration: none;
+              color: $theme-color;
+                transition: .2s ease-in;
+                transition-delay: .15s;
+                font-family: 'NimbuSanTBlaCon', sans-serif;
+                font-size: 22px;
+                letter-spacing: .05rem;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        hr {
+            border: .1rem solid $theme-color;
+            margin: 1.5rem auto;
+            width: 75%;
+        }
+        h2 {
+            color: $theme-color;
+            text-transform: capitalize;
+            font-family: 'NimbuSanTBlaCon', sans-serif;
+            text-align: center;
+            // font-weight: 900;
+            font-size: 32px;
+        }
+        .social-images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            a{
+                text-decoration: none;
+                margin: .4rem .25rem;
+                color: $secondary-color;
+                background-color: $theme-color;
+                padding: .25rem .5rem;
+                font-size: 1.2rem;
+                border-radius: 50%;
+                transition: .2s ease-in;
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+        .footer-bottom {
+            background-color: $theme-color;
+            user-select: none;
+            text-align: center;
+            padding: 1.5rem 0;
+            h3{
+                font-weight: 700;
+                font-size: 18px;
+                font-family: 'Avenir', sans-serif;
+                margin: 0;
+    
+            }
+        }
+    }
+}
+
+
+.home-page {
+    footer {
+        .footer-head {
+            background: url(../images/go-meetless-bg.svg);
+        }
+    }
+}
+
+.contact-page {
+    footer {
+        .footer-head {
+            display: none;
+        }
+    }
+}
+
+.signup-page {
+        .footer-head {
+            display: none;
+        }
+}
+
+
+@media (max-width: 1400px) {
+    .footer-inner {
+        .footer-tabs {
+            li a{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    footer {
+        .footer-head {
+            h1 {
+                font-size: 40px;
+                width: 60%;
+                margin: 0 auto;
+                line-height: 1;
+            }
+            h2 {
+                font-size: 40px;
+                margin-top: 1rem;
+            }
+            .theme-btn {
+                padding: .5rem 1.5rem;
+                font-size: 16px;
+            }
+            img{
+                width: 14%;
+            }
+        }
+        .footer-tabs {
+            display: block;
+            li a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .footer-inner {
+        display: none;
+    }
+}
+
+
+@media (min-width: 991px) {
+    
+    .footer-mobile {
+        display: none;
+    }
+}
